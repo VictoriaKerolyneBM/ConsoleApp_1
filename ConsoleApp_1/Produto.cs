@@ -35,5 +35,24 @@ namespace ConsoleApp_1
             return Valor;
         }
 
+        public void setValor(decimal valor)
+        {
+            if (valor > 0)
+            {
+                Valor = valor;
+            }
+        }
+
+        public void setId (int id) 
+        {
+              Id=id;
+        }
+
+        public void setDescricao(string descricao)
+        {
+            Descricao = descricao;
+
+        }
+
     }
 }
