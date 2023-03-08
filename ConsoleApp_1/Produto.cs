@@ -20,5 +20,20 @@ namespace ConsoleApp_1
         
         }
 
+        public int getId()
+        {
+            return Id;
+        }
+
+        public string getDescricao() 
+        {
+           return Descricao;
+        }
+
+        public decimal getValor()
+        {
+            return Valor;
+        }
+
     }
 }
