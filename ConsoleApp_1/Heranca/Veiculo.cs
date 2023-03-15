@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp_1.Heranca
+﻿namespace ConsoleApp_1.Heranca
 {
-    internal class Veiculo
+    public  class Veiculo
     {
+
+        public string cor;
+        public int qtdeRodas;
+        public int qtdeAssento;
+        public bool temMotor;
+
     }
 }

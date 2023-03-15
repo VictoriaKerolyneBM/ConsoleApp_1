@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_1.Heranca
 {
-    public class Carro : Veiculo
+    public class Bicicleta : Veiculo;
     {
-        public string renavam;
     }
 }
