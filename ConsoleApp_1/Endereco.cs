@@ -11,46 +11,54 @@ namespace ConsoleApp_1
     public class Endereco
     {
         private int Id;
-        private int Cep;
-        private string Logradouro;
+        private string Cep;
+        private string Rua;
         private int Numero;
         private string Bairro;
         private string Cidade;
 
-     public Endereco(int id,int cep, string logradouro,int numero,string bairro, string cidade) 
+        public Endereco(int id, string cep, string rua, int numero, string bairro, string cidade)
         {
             Id = id;
             Cep = cep;
-            Logradouro = logradouro;
+            Rua = rua;
             Numero = numero;
             Bairro = bairro;
             Cidade = cidade;
+        }
+
+        public void AtualizarEndereco(string rua, int numero, string bairro)
+        {
+            setBairro(bairro);
+            setNumero(numero);
+            setRua(rua);
+        }
+
+        public string EnderecoCompleto()
+        {
+            return "Rua " + Rua + ", Nº " + Numero + " Bairro " + Bairro + " Cidade: " + Cidade;
         }
 
         public int getId()
         {
             return Id;
         }
-
-        public int getCep()
+        public string getCep()
         {
             return Cep;
         }
-
-        public string getLogradouro()
+        public string getRua()
         {
-            return Logradouro;
+            return Rua;
         }
         public int getNumero()
         {
             return Numero;
         }
-
         public string getBairro()
         {
             return Bairro;
         }
-
         public string getCidade()
         {
             return Cidade;
@@ -58,31 +66,27 @@ namespace ConsoleApp_1
 
         public void setId(int id)
         {
-           Id=id;
+            Id = id;
         }
-
-        public void setCep(int cep)
+        public void setCep(string cep)
         {
-            Cep=cep;
+            Cep = cep;
         }
-
-        public void setLogradouro(string logradouro)
+        public void setRua(string rua)
         {
-             Logradouro = logradouro;
+            Rua = rua;
         }
         public void setNumero(int numero)
         {
-            Numero = numero ;
+            Numero = numero;
         }
-
         public void setBairro(string bairro)
         {
-             Bairro=bairro;
+            Bairro = bairro;
         }
-
         public void setCidade(string cidade)
         {
-             Cidade=cidade;
+            Cidade = cidade;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace ConsoleApp_1
         }
 
         public decimal getValor()
-        {
+        { 
             return Valor;
         }
 

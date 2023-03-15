@@ -12,32 +12,24 @@ namespace ConsoleApp_1
         private int Id;
         private string Nome;
         private string Telefone;
+        private Endereco Endereco;
 
-        public Cliente(int id, string nome, string telefone) 
+
+        public Cliente(int id, string nome, string telefone, Endereco endereco)
         {
             Id = id;
             Nome = nome;
             Telefone = telefone;
-
+            Endereco = endereco;
         }
-        public int getId()
+        public void setEndereco(Endereco endereco)
         {
-            return Id;
-        }
-
-        public string getNome()
-        {
-            return Nome;
+            Endereco = endereco;
         }
 
-        public string getTelefone()
+        public Endereco getEndereco()
         {
-            return Telefone;
-        }
-
-        public void setNome(string nome)
-        {
-            Nome=nome;
+            return Endereco;
         }
 
         public void setId(int id)
@@ -45,11 +37,28 @@ namespace ConsoleApp_1
             Id = id;
         }
 
-        public void setTelefone(string telefone)
+        public int getId()
         {
-            Telefone=telefone;
-
+            return Id;
+        }
+        public void setNome(string nome)
+        {
+            Nome = nome;
         }
 
+        public string getNome()
+        {
+            return Nome;
+        }
+
+        public void setTelefone(string telefone)
+        {
+            Telefone = telefone;
+        }
+
+        public string getTelefone()
+        {
+            return Telefone;
+        }
     }
 }
